@@ -10,12 +10,27 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Laboratorio 0</h1>
         </header>
-        <p className="App-intro">
-          Woop woop
-        </p>
+          <Woop name="woop"/>
+          <Button/>
       </div>
     );
   }
+}
+
+class Button extends Component {
+    handleClick = () => {
+        document.bgColor = "#DF000F"
+    };
+
+    render() {
+        return <button  onClick={this.handleClick}>Cambiar fondo</button>
+    }
+}
+
+class Woop extends Component {
+    render() {
+        return <h1>Woop woop</h1>;
+    }
 }
 
 export default App;
