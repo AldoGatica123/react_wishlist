@@ -27,6 +27,20 @@ class Button extends Component {
     }
 }
 
+//
+// class btnButton extends Component {
+//     handleClick = () => {
+//         this.setState({
+//             bgColor: 'blue'
+//         })
+//     };
+//
+//     render() {
+//         return <button  onClick={this.handleClick}>Cambiar fondo</button>
+//     }
+// }
+
+
 class Woop extends Component {
     render() {
         return <h1>Woop woop</h1>;
