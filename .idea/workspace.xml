@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/../web_wishlist/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web_wishlist/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../web_wishlist/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../web_wishlist/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../web_wishlist/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../web_wishlist/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web_wishlist/src/components/Wishlist.css" beforeDir="false" afterPath="$PROJECT_DIR$/../web_wishlist/src/components/Wishlist.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../web_wishlist/src/components/Wishlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/../web_wishlist/src/components/Wishlist.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -22,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../web_wishlist/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+            <state relative-caret-position="195">
+              <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -37,20 +38,29 @@
       <file leaf-file-name="App.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../web_wishlist/src/App.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="6" lean-forward="true" selection-start-column="6" selection-end-column="6" />
+            <state relative-caret-position="405">
+              <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Wishlist.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Wishlist.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../web_wishlist/src/components/Wishlist.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="32" column="2" lean-forward="true" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
+            <state relative-caret-position="641">
+              <caret line="53" column="3" selection-start-line="53" selection-start-column="3" selection-end-line="53" selection-end-column="3" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Wishlist.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../web_wishlist/src/components/Wishlist.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -77,9 +87,10 @@
         <option value="$PROJECT_DIR$/../web_wishlist/src/logo.svg" />
         <option value="$PROJECT_DIR$/../web_wishlist/src/Wishlist.css" />
         <option value="$PROJECT_DIR$/../web_wishlist/src/Wishlist.js" />
-        <option value="$PROJECT_DIR$/../web_wishlist/src/App.css" />
-        <option value="$PROJECT_DIR$/../web_wishlist/src/components/Wishlist.js" />
         <option value="$PROJECT_DIR$/../web_wishlist/src/App.js" />
+        <option value="$PROJECT_DIR$/../web_wishlist/src/App.css" />
+        <option value="$PROJECT_DIR$/../web_wishlist/src/components/Wishlist.css" />
+        <option value="$PROJECT_DIR$/../web_wishlist/src/components/Wishlist.js" />
       </list>
     </option>
   </component>
@@ -123,6 +134,12 @@
               <item name="web_wishlist" type="b2602c69:ProjectViewProjectNode" />
               <item name="web_wishlist" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web_wishlist" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_wishlist" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -230,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537336257925</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fixes">
+      <created>1537336897369</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1537336897369</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -255,7 +279,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32899627" />
       <window_info id="npm" order="2" sideWeight="0.50208044" side_tool="true" weight="0.21822542" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49960032" visible="true" weight="0.32992566" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49960032" visible="true" weight="0.32992566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" sideWeight="0.50208044" side_tool="true" weight="0.21822542" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -280,7 +304,8 @@
     <MESSAGE value="List showing items" />
     <MESSAGE value="Component imports changed" />
     <MESSAGE value="Wishlist uses a list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Wishlist uses a list" />
+    <MESSAGE value="fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../web_wishlist/src/App.js">
@@ -345,10 +370,34 @@
     <entry file="file://$PROJECT_DIR$/../web_wishlist/src/registerServiceWorker.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/../web_wishlist/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../web_wishlist/node_modules/react-scripts/template/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../web_wishlist/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../web_wishlist/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -359,36 +408,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../web_wishlist/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../web_wishlist/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" lean-forward="true" selection-start-column="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../web_wishlist/src/components/Wishlist.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="32" column="2" lean-forward="true" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
+        <state relative-caret-position="641">
+          <caret line="53" column="3" selection-start-line="53" selection-start-column="3" selection-end-line="53" selection-end-column="3" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../web_wishlist/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -27,10 +27,14 @@
   to { transform: rotate(360deg); }
 }
 
+.Body {
+  /*position: relative;*/
+}
+
 .Footer {
-  position: fixed;
-  left: 0;
+  position: sticky;
   bottom: 0;
   width: 100%;
-  background: #1abc9c;
+  height: 5%;
+  background: #78a7bc;
 }

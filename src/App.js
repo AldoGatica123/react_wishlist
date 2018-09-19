@@ -11,12 +11,12 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">My wishlist</h1>
         </header>
-        <body>
+        <body className="Body">
           <WishlistContainer/>
         </body>
-        {/*<footer className="Footer">*/}
-          {/*<h1>Proyecto de 100 puntos!</h1>*/}
-        {/*</footer>*/}
+        <footer className="Footer">
+          <h1>Proyecto de 100 puntos!</h1>
+        </footer>
       </div>
     );
   }
