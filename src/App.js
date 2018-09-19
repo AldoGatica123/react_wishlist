@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import WishlistContainer from './components/Wishlist.js';
 
 class App extends Component {
   render() {
@@ -18,86 +19,15 @@ class App extends Component {
   }
 }
 
-class Button extends Component {
-    handleClick = () => {
-        document.bgColor = "#DF000F"
-    };
-
-    render() {
-        return <button  onClick={this.handleClick}>Cambiar fondo</button>
-    }
-}
-
-
-class WishlistContainer extends Component {
-  render() {
-    return (
-        <div>
-          <h1>Woop woop</h1>
-          <div className="container">
-            <WishlistItem name="Nintendo Switch"
-                          imgurl="https://images-na.ssl-images-amazon.com/images/I/41UY4Pnw0SL._AC_SX430_.jpg"
-                          price="$ 299"
-                          descr="Quiero un Nintendo Switch!!!"
-                          date="25 Dic 2018"
-                          url="https://www.amazon.com/Nintendo-Switch-Gray-Joy/dp/B01LTHP2ZK?th=1"
-            />
-            <WishlistItem name="Nintendo Switch"
-                            imgurl="https://images-na.ssl-images-amazon.com/images/I/41UY4Pnw0SL._AC_SX430_.jpg"
-                            price="$ 299"
-                            descr="Quiero un Nintendo Switch!!!"
-                            date="25 Dic 2018"
-                            url="https://www.amazon.com/Nintendo-Switch-Gray-Joy/dp/B01LTHP2ZK?th=1"
-          />
-            <WishlistItem name="Nintendo Switch"
-                          imgurl="https://images-na.ssl-images-amazon.com/images/I/41UY4Pnw0SL._AC_SX430_.jpg"
-                          price="$ 299"
-                          descr="Quiero un Nintendo Switch!!!"
-                          date="25 Dic 2018"
-                          url="https://www.amazon.com/Nintendo-Switch-Gray-Joy/dp/B01LTHP2ZK?th=1"
-            />
-            <WishlistItem name="Nintendo Switch"
-                          imgurl="https://images-na.ssl-images-amazon.com/images/I/41UY4Pnw0SL._AC_SX430_.jpg"
-                          price="$ 299"
-                          descr="Quiero un Nintendo Switch!!!"
-                          date="25 Dic 2018"
-                          url="https://www.amazon.com/Nintendo-Switch-Gray-Joy/dp/B01LTHP2ZK?th=1"
-            />
-            <WishlistItem name="Nintendo Switch"
-                          imgurl="https://images-na.ssl-images-amazon.com/images/I/41UY4Pnw0SL._AC_SX430_.jpg"
-                          price="$ 299"
-                          descr="Quiero un Nintendo Switch!!!"
-                          date="25 Dic 2018"
-                          url="https://www.amazon.com/Nintendo-Switch-Gray-Joy/dp/B01LTHP2ZK?th=1"
-            />
-            <WishlistItem name="Nintendo Switch"
-                          imgurl="https://images-na.ssl-images-amazon.com/images/I/41UY4Pnw0SL._AC_SX430_.jpg"
-                          price="$ 299"
-                          descr="Quiero un Nintendo Switch!!!"
-                          date="25 Dic 2018"
-                          url="https://www.amazon.com/Nintendo-Switch-Gray-Joy/dp/B01LTHP2ZK?th=1"
-            />
-          </div>
-
-        </div>
-      )
-    }
-}
-
-class WishlistItem extends Component {
-  render() {
-    return(
-      <div>
-        <h1>{this.props.name}</h1>
-        <img ref="image" src={this.props.imgurl}/>
-        <h2>{this.props.price}</h2>
-        <h3>{this.props.descr}</h3>
-        <h4>{this.props.date}</h4>
-        <a href={this.props.url}>{this.props.name} para Aldo ;)</a>
-      </div>
-    )
-  }
-}
+// class Button extends Component {
+//     handleClick = () => {
+//         document.bgColor = "#DF000F"
+//     };
+//
+//     render() {
+//         return <button  onClick={this.handleClick}>Cambiar fondo</button>
+//     }
+// }
 
 
 export default App;
