@@ -14,6 +14,9 @@ class App extends Component {
         <body>
           <WishlistContainer/>
         </body>
+        {/*<footer className="Footer">*/}
+          {/*<h1>Proyecto de 100 puntos!</h1>*/}
+        {/*</footer>*/}
       </div>
     );
   }
