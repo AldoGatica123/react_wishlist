@@ -58,7 +58,7 @@ class WishlistContainer extends Component {
   render() {
     return (
       <div>
-        <h1>Woop woop</h1>
+        <h1>Woop woop!</h1>
         <WishList wishlist={wishlist}/>
       </div>
     )
