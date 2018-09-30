@@ -1,9 +1,40 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import WishlistContainer from './components/Wishlist.js';
+// import WishlistContainer from './components/PublicWishlist.js';
+// import FooterContainer from "./components/MyFooter";
+import PostForm from './components/PostForm';
+import AllPost from './components/AllPost';
+
 
 class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <PrivateApp/>
+      </div>
+    );
+  }
+}
+
+// class PublicApp extends Component {
+//   render() {
+//     return (
+//       <div className="App">
+//         <header className="App-header">
+//           <img src={logo} className="App-logo" alt="logo" />
+//           <h1 className="App-title">Aldo's wishlist</h1>
+//         </header>
+//         <body className="content">
+//         <WishlistContainer/>
+//         </body>
+//         <FooterContainer/>
+//       </div>
+//     );
+//   }
+// }
+
+class PrivateApp extends Component {
   render() {
     return (
       <div className="App">
@@ -11,12 +42,10 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">My wishlist</h1>
         </header>
-        <body className="Body">
-          <WishlistContainer/>
+        <body className="content">
+          <PostForm/>
+          <AllPost/>
         </body>
-        <footer className="Footer">
-          <h1>Proyecto de 100 puntos!</h1>
-        </footer>
       </div>
     );
   }

@@ -1,0 +1,16 @@
+.site-footer {
+  color: #566f7b;
+  border-bottom: 6px solid #4a7dde;
+  vertical-align: baseline;
+  width: 100%;
+}
+
+.navigation{
+  display: flex;
+  justify-content: space-around;
+}
+
+nav{
+}
+
+
