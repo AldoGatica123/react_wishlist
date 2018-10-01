@@ -42,10 +42,10 @@ class PrivateApp extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">My wishlist</h1>
         </header>
-        <body className="content">
+        <div className="content">
           <PostForm/>
           <AllPost/>
-        </body>
+        </div>
       </div>
     );
   }
