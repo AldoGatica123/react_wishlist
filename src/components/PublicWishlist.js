@@ -33,8 +33,13 @@ class WishlistContainer extends Component {
   render() {
     return (
       <div>
+<<<<<<< HEAD:src/components/PublicWishlist.js
         <h1>Woop woop</h1>
         <PublicWishlist wishlist={wishlist}/>
+=======
+        <h1>Woop woop!</h1>
+        <WishList wishlist={wishlist}/>
+>>>>>>> 38121cccecc86632b4a275adcc6b2c259b79e3c5:src/components/Wishlist.js
       </div>
     )
   }
