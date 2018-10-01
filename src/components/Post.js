@@ -1,10 +1,11 @@
 import React, {Component} from "react";
 import { connect } from 'react-redux';
+import '../css/Post.css'
 
 class Post extends Component {
   render() {
     return (
-      <div>
+      <div className="post-item">
         <h2>{this.props.post.title}</h2>
         <p>{this.props.post.message}</p>
 

@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import './PublicWishlist.css';
+import '../css/PublicWishlist.css';
 
 const wishlist = [
   {
