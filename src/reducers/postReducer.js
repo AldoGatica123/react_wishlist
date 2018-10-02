@@ -14,7 +14,9 @@ const postReducer = (state = [], action) => {
         if(post.id === action.id) {
           return {
             ...post,
-            title:action.data.title_input,
+            name:action.data.name,
+            description:action.data.description,
+            price:action.data.price,
             editing: !post.editing
           }
         } else return post;

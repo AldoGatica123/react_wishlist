@@ -4,15 +4,21 @@ import {connect} from 'react-redux';
 class PostForm extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
-    const title = this.getTitle.value;
+    const name = this.name.value;
+    const description = this.description.value;
+    const price = this.price.value;
     const data = {
       id: new Date(),
-      title,
+      name,
+      description,
+      price,
       editing:false
     };
 
     this.props.dispatch({type:'ADD_POST', data});
-    this.getTitle.value = '';
+    this.name.value = '';
+    this.description.value = '';
+    this.price.value = '';
   };
 
   render() {
@@ -22,9 +28,16 @@ class PostForm extends Component {
         <form onSubmit={this.handleSubmit}>
           <input
             required type="text"
-            ref={(input)=>this.getTitle = input}
-            placeholder="Enter Post Title"
-          />
+            ref={(input)=>this.name = input}
+            placeholder="Enter Item Name"/><br/><br/>
+          <input
+            required type="text"
+            ref={(input)=>this.description = input}
+            placeholder="Enter Item Description"/><br/><br/>
+          <input
+            required type="text"
+            ref={(input)=>this.price = input}
+            placeholder="Enter Item Price"/><br/><br/>
           <br /><br />
           <button>Post</button>
         </form>

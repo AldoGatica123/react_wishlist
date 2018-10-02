@@ -5,11 +5,17 @@ import { connect } from 'react-redux';
 class EditComponent extends Component {
   handleEdit = (e) => {
     e.preventDefault();
-    const newTitle = this.getTitle.value;
-    const newMessage = this.getMessage.value;
+    const name = this.name.value;
+    const description = this.description.value;
+    const price = this.price.value;
+    const image_url = this.image_url.value;
+    const product_url = this.product_url.value;
     const data = {
-      newTitle,
-      newMessage
+      name,
+      description,
+      price,
+      image_url,
+      product_url
     }
     this.props.dispatch({ type: 'UPDATE', id: this.props.post.id, data: data })
   }
@@ -17,10 +23,16 @@ class EditComponent extends Component {
     return (
       <div>
         <form onSubmit={this.handleEdit}>
-          <input required type="text" ref={(input) => this.getTitle = input}
-                 defaultValue={this.props.post.title} placeholder="Enter Post Title" /><br /><br />
-          <textarea required rows="5" ref={(input) => this.getMessage = input}
-                    defaultValue={this.props.post.message} cols="28" placeholder="Enter Post" /><br /><br />
+          <input required type="text" ref={(input) => this.name = input}
+                 defaultValue={this.props.post.name} placeholder="Enter Item Name" /><br /><br />
+          <input required type="text" ref={(input) => this.description = input}
+                 defaultValue={this.props.post.description} placeholder="Enter Item Description" /><br /><br />
+          <input required type="text" ref={(input) => this.price = input}
+                 defaultValue={this.props.post.price} placeholder="Enter Item Price" /><br /><br />
+          <input required type="text" ref={(input) => this.price = input}
+                 defaultValue={this.props.post.image_url} placeholder="Enter Item Image URL" /><br /><br />
+          <input required type="text" ref={(input) => this.price = input}
+                 defaultValue={this.props.post.price} placeholder="Enter Item Product URL" /><br /><br />
           <button>Update</button>
         </form>
       </div>
