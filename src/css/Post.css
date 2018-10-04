@@ -1,8 +1,78 @@
 .post-item{
-  background:#0099CC;
-  width:60%;
+  background: #8B9996;
+  width:80%;
   margin:0 auto;
-  padding:30px;
+  padding:25px;
   margin-bottom:20px;
   box-shadow: 10px 10px 12px 0 rgba(46, 60, 73, 0.05);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  grid-template-rows: repeat(auto-fill, minmax(200px, 2fr));
 }
+
+.left-container{
+  background-color: #D7E7E7;
+  display: inherit;
+  horiz-align: center;
+  padding: 10px;
+}
+
+.right-container{
+  background-color: #D7E7E7;
+  padding: 10px;
+  text-align: center;
+}
+
+.post-url{
+
+}
+
+.post-name{
+
+}
+
+.post-descr{
+
+}
+
+.post-price{
+
+}
+
+.button-container{
+  display: grid;
+}
+
+.post-image{
+  width: 100%;
+  object-fit: contain;
+  max-height: 90%;
+}
+
+.post-edit{
+  color: white;
+  background: #0099CC;
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.post-delete{
+  color: white;
+  background: #cc4c3d;
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+

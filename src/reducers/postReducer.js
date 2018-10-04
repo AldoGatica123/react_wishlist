@@ -17,6 +17,8 @@ const postReducer = (state = [], action) => {
             name:action.data.name,
             description:action.data.description,
             price:action.data.price,
+            image_url:action.data.image_url,
+            product_url:action.data.product_url,
             editing: !post.editing
           }
         } else return post;

@@ -7,11 +7,15 @@ class PostForm extends Component {
     const name = this.name.value;
     const description = this.description.value;
     const price = this.price.value;
+    const image_url = this.image_url.value;
+    const product_url = this.product_url.value;
     const data = {
       id: new Date(),
       name,
       description,
       price,
+      image_url,
+      product_url,
       editing:false
     };
 
@@ -19,6 +23,8 @@ class PostForm extends Component {
     this.name.value = '';
     this.description.value = '';
     this.price.value = '';
+    this.image_url.value = '';
+    this.product_url.value = '';
   };
 
   render() {
@@ -26,19 +32,17 @@ class PostForm extends Component {
       <div>
         <h1>Create Post</h1>
         <form onSubmit={this.handleSubmit}>
-          <input
-            required type="text"
-            ref={(input)=>this.name = input}
-            placeholder="Enter Item Name"/><br/><br/>
-          <input
-            required type="text"
-            ref={(input)=>this.description = input}
-            placeholder="Enter Item Description"/><br/><br/>
-          <input
-            required type="text"
-            ref={(input)=>this.price = input}
-            placeholder="Enter Item Price"/><br/><br/>
-          <br /><br />
+          <input required type="text" ref={(input) => this.name = input}
+                 placeholder="Enter Item Name" /><br /><br />
+          <input required type="text" ref={(input) => this.description = input}
+                 placeholder="Enter Item Description" /><br /><br />
+          <input required type="text" ref={(input) => this.price = input}
+                 placeholder="Enter Item Price" /><br /><br />
+          <input required type="text" ref={(input) => this.image_url = input}
+                 placeholder="Enter Item Image URL" /><br /><br />
+          <input required type="text" ref={(input) => this.product_url = input}
+                 placeholder="Enter Item Product URL" /><br /><br />
+
           <button>Post</button>
         </form>
       </div>
