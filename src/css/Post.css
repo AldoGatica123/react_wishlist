@@ -43,11 +43,11 @@
   color: white;
   background: rgba(68, 82, 107, 0.34);
   border: none;
-  padding: 16px 32px;
+  padding: 10px 20px;
   text-align: center;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 2px 1px;
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
@@ -57,11 +57,11 @@
   color: white;
   background: #0099CC;
   border: none;
-  padding: 16px 32px;
+  padding: 10px 20px;
   text-align: center;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 2px 1px;
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
@@ -71,11 +71,11 @@
   color: white;
   background: #cc4c3d;
   border: none;
-  padding: 16px 32px;
+  padding: 10px 20px;
   text-align: center;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 2px 1px;
   text-decoration: none;
   text-transform: uppercase;
 }

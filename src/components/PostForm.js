@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
+import '../css/PostForm.css'
 
 class PostForm extends Component {
   handleSubmit = (e) => {
@@ -29,21 +30,21 @@ class PostForm extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Create Post</h1>
+      <div className="create-container">
         <form onSubmit={this.handleSubmit}>
           <input required type="text" ref={(input) => this.name = input}
-                 placeholder="Enter Item Name" /><br /><br />
+                 placeholder="Enter Item Name" /><br />
           <input required type="text" ref={(input) => this.description = input}
-                 placeholder="Enter Item Description" /><br /><br />
+                 placeholder="Enter Item Description" /><br />
           <input required type="text" ref={(input) => this.price = input}
-                 placeholder="Enter Item Price" /><br /><br />
+                 placeholder="Enter Item Price" /><br />
           <input required type="text" ref={(input) => this.image_url = input}
-                 placeholder="Enter Item Image URL" /><br /><br />
+                 placeholder="Enter Item Image URL" /><br />
           <input required type="text" ref={(input) => this.product_url = input}
-                 placeholder="Enter Item Product URL" /><br /><br />
+                 placeholder="Enter Item Product URL" /><br />
 
-          <button>Post</button>
+          <button className="post-button">Post</button>
+          <button className="cancel-button" onClick={this.closeModal}>Cancel</button>
         </form>
       </div>
     );

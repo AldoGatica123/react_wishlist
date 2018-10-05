@@ -6,9 +6,8 @@ Items:
 Nombre
 Descripción
 Precio
-Url
+Url del producto
 Imagen
-Fecha de entrega
 
 
 

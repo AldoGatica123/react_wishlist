@@ -1,0 +1,25 @@
+.create-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post-button{
+  color: white;
+  background: #277872;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 1px;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.create-container > form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

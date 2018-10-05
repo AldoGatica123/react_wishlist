@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../logo.png';
 import '../css/App.css';
-import PostForm from './PostForm';
 import AllPost from './AllPost';
 
 class App extends Component {
@@ -15,6 +14,7 @@ class App extends Component {
 }
 
 class PrivateApp extends Component {
+
   render() {
     return (
       <div className="App">
@@ -28,7 +28,6 @@ class PrivateApp extends Component {
           </div>
         </header>
         <div className="content">
-          {/*<PostForm/>*/}
           <AllPost/>
         </div>
       </div>
