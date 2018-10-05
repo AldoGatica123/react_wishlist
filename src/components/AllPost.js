@@ -8,7 +8,10 @@ class AllPost extends Component {
   render() {
     return (
       <div className="all-post-container">
-        <h1>All Posts</h1>
+        <div className="container-header">
+          <h1>All Posts</h1>
+          <button className="create-button">Add item</button>
+        </div>
         {this.props.posts.map((post) => (
           <div key={post.id}>
             {post.editing ? <EditComponent post={post} key={post.id} /> :

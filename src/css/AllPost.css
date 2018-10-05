@@ -1,3 +1,25 @@
 .all-post-container{
-  padding: 50px;
+  padding: 10px;
+}
+
+.container-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  horiz-align: center;
+  margin: 0 auto;
+  padding:25px;
+  width: 80%;
+}
+
+.create-button{
+  color: white;
+  background: #277872;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 1px;
+  text-transform: uppercase;
 }

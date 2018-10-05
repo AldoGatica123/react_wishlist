@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
+import logo from '../logo.png';
 import '../css/App.css';
 import PostForm from './PostForm';
 import AllPost from './AllPost';
@@ -19,11 +19,16 @@ class PrivateApp extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">My Wishlist</h1>
+          <div className="header-left-container">
+            <img src={logo} className="App-logo" alt="logo" />
+            <h1 className="App-title">My Wishlist</h1>
+          </div>
+          <div className="header-right container">
+            <button className="publish-button">Share my Wishlist</button>
+          </div>
         </header>
         <div className="content">
-          <PostForm/>
+          {/*<PostForm/>*/}
           <AllPost/>
         </div>
       </div>

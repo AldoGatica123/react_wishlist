@@ -17,6 +17,9 @@ class FooterContainer extends Component {
               <button className="button-signin">Make my wishlist</button>
             </div>
           </nav>
+          <nav>
+            <div>Logo made with <a href="https://www.designevo.com/en/" title="Free Online Logo Maker">DesignEvo</a></div>
+          </nav>
         </section>
       </footer>
     )
