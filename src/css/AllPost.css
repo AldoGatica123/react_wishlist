@@ -12,6 +12,12 @@
   width: 80%;
 }
 
+.create-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .create-button{
   color: white;
   background: #277872;
@@ -21,5 +27,20 @@
   display: inline-block;
   font-size: 16px;
   margin: 2px 1px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.cancel-button{
+  color: white;
+  display: block;
+  width: 100%;
+  background: rgba(68, 82, 107, 0.34);
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  margin: 2px 1px;
+  cursor: pointer;
   text-transform: uppercase;
 }

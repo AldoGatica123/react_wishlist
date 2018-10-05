@@ -50,22 +50,23 @@ class Post extends Component {
           <div className="button-container">
             <button className="post-edit"
                     onClick={()=>this.props.dispatch({type:'EDIT_POST', id:this.props.post.id})}>Edit</button>
+
             <button className="post-delete" onClick={this.openModal}>Delete</button>
             <div>
               <Modal
-                isOpen={this.state.modalIsOpen}
-                onAfterOpen={this.afterOpenModal}
-                onRequestClose={this.closeModal}
-                style={customStyles}
-                contentLabel="Delete item">
+              isOpen={this.state.modalIsOpen}
+              onAfterOpen={this.afterOpenModal}
+              onRequestClose={this.closeModal}
+              style={customStyles}
+              contentLabel="Delete item">
 
-                <h3>Are you sure you want to delete this item from your wishlist?</h3>
-                <div className="confirmation-container">
-                  <button className="post-delete" onClick={()=>this.props.dispatch({type:'DELETE_POST', id:this.props.post.id})}>Delete</button>
+              <h3>Are you sure you want to delete this item from your wishlist?</h3>
+              <div className="confirmation-container">
+                <button className="post-delete" onClick={()=>this.props.dispatch({type:'DELETE_POST', id:this.props.post.id})}>Delete</button>
 
-                  <button className="cancel-button" onClick={this.closeModal}>Cancel</button>
-                </div>
-              </Modal>
+                <button className="cancel-button" onClick={this.closeModal}>Cancel</button>
+              </div>
+            </Modal>
             </div>
           </div>
 

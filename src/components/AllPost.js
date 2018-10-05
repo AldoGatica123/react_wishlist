@@ -44,7 +44,7 @@ class AllPost extends Component {
           <h1>All Posts</h1>
           <button className="create-button" onClick={this.openModal}>Add item</button>
         </div>
-        <div>
+        <div className="create-container">
           <Modal
             isOpen={this.state.modalIsOpen}
             onAfterOpen={this.afterOpenModal}
@@ -54,6 +54,7 @@ class AllPost extends Component {
             <h1>Add item</h1>
             <h3>Write what would you like to receive</h3>
             <PostForm/>
+            <button className="cancel-button" onClick={this.closeModal}>Cancel</button>
           </Modal>
         </div>
         {this.props.posts.map((post) => (

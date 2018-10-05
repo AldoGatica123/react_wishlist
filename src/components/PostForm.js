@@ -44,7 +44,6 @@ class PostForm extends Component {
                  placeholder="Enter Item Product URL" /><br />
 
           <button className="post-button">Post</button>
-          <button className="cancel-button" onClick={this.closeModal}>Cancel</button>
         </form>
       </div>
     );

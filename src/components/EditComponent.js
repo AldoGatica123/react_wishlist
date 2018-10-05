@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-
+import '../css/EditComponent.css'
 
 class EditComponent extends Component {
   handleEdit = (e) => {
@@ -22,7 +22,7 @@ class EditComponent extends Component {
 
   render() {
     return (
-      <div>
+      <div className="edit-container">
         <form onSubmit={this.handleEdit}>
           <input required type="text" ref={(input) => this.name = input}
                  defaultValue={this.props.post.name} placeholder="Enter Item Name" /><br /><br />
@@ -34,7 +34,7 @@ class EditComponent extends Component {
                  defaultValue={this.props.post.image_url} placeholder="Enter Item Image URL" /><br /><br />
           <input required type="text" ref={(input) => this.product_url = input}
                  defaultValue={this.props.post.product_url} placeholder="Enter Item Product URL" /><br /><br />
-          <button>Update</button>
+          <button className="update-button">Update</button>
         </form>
       </div>
     );
