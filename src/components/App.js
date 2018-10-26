@@ -1,7 +1,9 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
+import {connect} from 'react-redux';
 import logo from '../logo.png';
 import '../css/App.css';
 import AllPost from './AllPost';
+import * as api from '../api/api_request'
 
 class App extends Component {
   render() {
@@ -14,13 +16,17 @@ class App extends Component {
 }
 
 class PrivateApp extends Component {
+  componentDidMount(){
+    // let data = api.getWishlist();
+    // this.props.dispatch({type:'FETCH_DATA', data});
+  }
 
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <div className="header-left-container">
-            <img src={logo} className="App-logo" alt="logo" />
+            <img src={logo} className="App-logo" alt="logo"/>
             <h1 className="App-title">My Wishlist</h1>
           </div>
           <div className="header-right container">
@@ -35,4 +41,4 @@ class PrivateApp extends Component {
   }
 }
 
-export default App;
+export default connect()(App);

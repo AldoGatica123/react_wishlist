@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import '../css/PostForm.css'
+import * as api from '../api/api_request'
 
 class PostForm extends Component {
   handleSubmit = (e) => {
@@ -27,6 +28,7 @@ class PostForm extends Component {
     this.image_url.value = '';
     this.product_url.value = '';
   };
+
 
   render() {
     return (

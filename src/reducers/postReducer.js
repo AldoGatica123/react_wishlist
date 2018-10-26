@@ -1,5 +1,8 @@
 const postReducer = (state = [], action) => {
   switch(action.type) {
+    case 'FETCH_DATA':
+      return state.update([action.data]);
+
     case 'ADD_POST':
       return state.concat([action.data]);
 
@@ -23,11 +26,9 @@ const postReducer = (state = [], action) => {
           }
         } else return post;
       });
-
     default:
       return state;
   }
-
 };
 
 

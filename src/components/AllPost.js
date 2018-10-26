@@ -37,6 +37,10 @@ class AllPost extends Component {
     this.setState({modalIsOpen: false});
   }
 
+  componentWillMount() {
+    Modal.setAppElement('body');
+  }
+
   render() {
     return (
       <div className="all-post-container">
@@ -58,8 +62,7 @@ class AllPost extends Component {
           </Modal>
         </div>
         {this.props.posts.map((post) => (
-          <div key={post.id}>
-            {post.editing ? <EditComponent post={post} key={post.id} /> :
+          <div key={post.id}>{post.editing ? <EditComponent post={post} key={post.id} /> :
               <Post key={post.id} post={post} />}
           </div>
         ))}
@@ -68,12 +71,11 @@ class AllPost extends Component {
   }
 }
 
-
 const mapStateToProps = (state) => {
   return {
     posts: state
   }
-}
+};
 
 
 export default connect(mapStateToProps)(AllPost);
