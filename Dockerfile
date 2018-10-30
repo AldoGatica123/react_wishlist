@@ -1,8 +1,7 @@
 FROM node:7.8.0
+WORKDIR /usr/src/app
 MAINTAINER "Aldo Gatica"
-ENV NPM_CONFIG_LOGLEVEL warn
-COPY . .
-RUN npm run build --production
-RUN npm install -g serve
-CMD serve -s build
+COPY . /usr/src/app/
 EXPOSE 5000
+RUN npm install
+RUN npm start

@@ -1,12 +1,11 @@
 import axios from 'axios'
-import { connect } from 'react-redux';
 
 const api_url = 'http://localhost:3000/api/v1/wishlist';
 
 export function getWishlist() {
   axios.get(api_url)
     .then(json => {
-      console.log(json);
+      // console.log(json);
       return json.data.payload;
     })
     .catch(error => console.log(error));

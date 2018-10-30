@@ -37,6 +37,9 @@ class AllPost extends Component {
     this.setState({modalIsOpen: false});
   }
 
+  componentDidMount () {
+  }
+
   componentWillMount() {
     Modal.setAppElement('body');
   }

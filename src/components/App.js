@@ -17,8 +17,7 @@ class App extends Component {
 
 class PrivateApp extends Component {
   componentDidMount(){
-    // let data = api.getWishlist();
-    // this.props.dispatch({type:'FETCH_DATA', data});
+    api.getWishlist();
   }
 
   render() {

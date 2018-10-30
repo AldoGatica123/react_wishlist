@@ -21,6 +21,7 @@ class PostForm extends Component {
       editing:false
     };
 
+    api.postWishlistItem(data);
     this.props.dispatch({type:'ADD_POST', data});
     this.name.value = '';
     this.description.value = '';

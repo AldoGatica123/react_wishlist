@@ -19,7 +19,7 @@ class EditComponent extends Component {
       product_url
     };
 
-    // api.edittWishlistItem(this.props.post.id, data);
+    api.edittWishlistItem(this.props.post.id, data);
     this.props.dispatch({ type: 'UPDATE', id: this.props.post.id, data: data })
   };
 
