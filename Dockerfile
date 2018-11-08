@@ -1,7 +1,7 @@
 FROM node:7.8.0
-WORKDIR /usr/src/app
 MAINTAINER "Aldo Gatica"
-COPY . /usr/src/app/
-EXPOSE 5000
-RUN npm install
-RUN npm start
+WORKDIR /usr/src/app
+COPY . ./
+EXPOSE 8000
+RUN npm install --silent
+RUN npm run build
