@@ -1,7 +1,9 @@
-FROM node:7.8.0
+FROM node:8
 MAINTAINER "Aldo Gatica"
 WORKDIR /usr/src/app
-COPY . ./
-EXPOSE 8000
-RUN npm install --silent
-RUN npm run build
+RUN npm install -g serve
+COPY . .
+CMD ["chmod+x","run"]
+EXPOSE 5000
+RUN npm install
+CMD ["/usr/src/app/run"]
